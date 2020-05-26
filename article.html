@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hrishikesh Bhagat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--animation.css-->
+    
+    <style>
+        /* for cards*/
+
+        /* Float four columns side by side */
+        .column {
+            /* float: left; */
+            width: 80%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 2px;
+            
+            background-color:#0b0c10;
+        }
+        .activepage{
+            color: #66fcf1;
+        }
+        .article{
+             display:inline-block;margin:7px;
+            padding:5px 10px;list-style:none;
+            color:#0b0010;
+            border: 1px solid black; 
+            cursor: pointer;;font-size:1.2em
+        }
+        .article:hover,
+        .article:active{
+            text-decoration: none;
+            background-color: #0b0010;
+            color: white;
+            
+        }
+        
+        .goup{
+            text-decoration: none; font-size: large; 
+            font-weight: bold;margin:0 5%;
+            border: 1px solid black; padding: 2px 10px;
+            text-decoration: none;
+        }
+        .goup:hover,
+        .goup:active{
+            text-decoration: none;
+            background-color: #0b0010;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="d-block d-lg-none">Hrishikesh Bhagat</span><span
+                class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.png" alt="" /></span></a><button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./skills.html">Skills/Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./project.html">Projects</a></li>
+                
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./tech.html">Tech/non-tech </a></li>
+                <li class="nav-item activapage"><a class="nav-link js-scroll-trigger " href="#" ><span class="activepage">Articles</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="articles">
+        <a href="#docker"   class="article  animate__animated animate__fadeInDownBig" >Docker</a>
+        <a href="#deno" class="article animate__animated animate__fadeInDownBig">Deno</a>
+
+        <!--docker article start-->
+        <div id="docker" style="background: #c5c6c7; color: #0b0010; width: 98%; margin: 0 1%; padding: 0 2%; " class="animate__animated animate__slideInRight " >
+            <img src="./assets/img/docker.gif" alt="docker gif"  width="40%"  height="300px" style="align-items:center;margin-left: 30%; margin-right: 30%;">
+            <h4>Difference between Docker Vs Virtual machine</h4>
+            <img src="./assets/img/docker_vsmachine.jpg" alt="" height="400px" width="80%" style="margin-left: 10%; margin-right: 10%;">
+            <br><br>
+            <ul type="square" >
+                <li>
+                    The virtual environment has a hypervisor layer, whereas Docker has a Docker engine layer.
+                </li>
+                <li>
+                    There are additional layers of libraries within the virtual machine, each of which compounds and creates very
+                significant differences between a Docker environment and a virtual machine environment.
+                </li>
+                <li>
+                    With a virtual machine, the memory usage is very high, whereas, in a Docker environment, memory usage is very low.
+                </li>
+                <li>
+                    In terms of performance, when you start building out a virtual machine, particularly when you have more than one virtual
+                machine on a server, the performance becomes poorer. With Docker, the performance is always high because of the single
+                Docker engine.
+                </li>
+                <li>
+                    The boot-up time for a virtual machine is fairly slow in comparison to the boot-up time for a Docker environment, in
+                which boot-up is almost instantaneous.
+                </li>
+                <li>
+                    One of the other challenges of using a virtual machine is that if you have unused memory within the environment, you
+                cannot reallocate it. If you set up an environment that has 9 gigabytes of memory, and 6 of those gigabytes are free,
+                you cannot do anything with that unused memory. With Docker, if you have free memory, you can reallocate and reuse it
+                across other containers used within the Docker environment.
+                </li>
+            </ul>
+            <h4>What is Docker</h4>
+                
+            <p>
+                Docker is an OS virtualized software platform that allows IT organizations to easily create, deploy, and run
+                applications in Docker containers, which have all the dependencies within them. The container itself is really just a
+                very lightweight package that has all the instructions and dependencies—such as frameworks, libraries, and bins—within
+                it.The container itself can be moved from environment to environment very easily.
+            </p>
+            <p>
+                In a <span><a href="https://www.edureka.co/blog/devops-lifecycle/" style="text-decoration: none;">DevOps lifecycle</a></span> , the area where
+                Docker really shines is deployment, because when you deploy your solution, you want to be able to guarantee that the
+                code that has been tested will actually work in the production environment.You can use Docker in multiple stages of your DevOps cycle, but it is especially valuable in the deployment stage.
+            </p>
+            <h4>How Doker works</h4>
+            <p>
+                Docker works via a Docker engine that is composed of two key elements: a server and a client; and the communication
+                between the two is via REST API. The server communicates the instructions to the client.
+            </p>
+            <h4>Docker terminologies</h4>
+            <section>
+                <h5>Dockerfile :</h5>
+                <img src="./assets/img/dockerfile.PNG" alt="dockerfile" height="200px" width="80%" style="margin-left: 10%; margin-right: 10%; border:1px solid #374054;" >
+                <br>
+                <p>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an
+                    image. Docker builds the images automatically by reading the instructions from Dockerfile.
+                </p>
+            </section>
+            <section>
+                <h5>Docker Image :</h5>
+                <img src="./assets/img/dockerimage.PNG" alt="dockerimage" height="250px" width="80%" style="margin-left: 10%; margin-right: 10%; border:1px solid #374054;">
+                <br>
+                <p>Image is read-only template for which is used for creation of container . Each instruction in docker file create
+                    layer
+                    in image. Images are created with the build command, and they'll produce a container when started with the run
+                    command.
+                    Images are stored in a Docker registry such as hub.docker.com.
+                </p>
+            </section>
+            <section>
+                <h5>Docker Container :</h5>
+                <img src="./assets/img/dockercontainer.PNG" alt="dockecontainer" height="250px" width="80%" style="margin-left: 10%; margin-right: 10%; border:1px solid #374054;">
+                <br>
+                <p>Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting
+                    of
+                    building, running, and distributing your Docker containers.The Docker client and docker daemon communicate with REST
+                    API
+                    The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker
+                    daemon.
+                </p>
+            </section>
+            <section>
+                <h5>Flow For Building Of Container</h5>
+                <img src="./assets/img/dockerflow.PNG" alt="dockecontainer" height="250px" width="80%" style="margin-left: 10%; margin-right: 10%; border:1px solid #374054;">
+            </section>
+            <br>
+            <h4 style="margin-left: 20%; margin-right: 20%; text-align: center;">For More info refer   <span><a href="https://docs.docker.com/">docker</a></span></h4>
+            <br>
+            <a href="#articles"  class="goup">GO UP</a>
+            <br><br>
+        </div>
+        <br>
+        <!--docker article end--> 
+        <br>
+        <hr width="80%">
+        <br>
+        <!--Deno article start-->
+        <div id="deno" style="background: #c5c6c7; color: #0b0010; width: 98%; margin: 0 1%; padding: 0 2%; " class="animate__animated animate__slideInLeft ">
+            <br><br><br>
+            <img src="./assets/img/deno.png" alt="deno" width="40%" height="300px"  style="align-items:center;margin-left: 30%; margin-right: 30%;">
+            <br><br>
+            <p>
+                Deno is a JavaScript/Typescript runtime framework. Deno ships security and modern JavaScript features inbuilt to provide
+                a great developer experience.
+            </p>
+            <h4>Features of Deno</h4>
+            <h5>According to the official website, Deno provides the following features out of the box.</h5>
+            <ul type="square">
+                <li>It’s built on V8, Rust and Tokio ( Rust runtime for writing Async operations ).</li>
+                <li>Secure by default.</li>
+                <li>Ships a single executable file.</li>
+                <li>Supports modern JavaScript.</li>
+                <li>Supports typescript out of the box.</li>
+                <li>Supports typescript out of the box.</li>
+            </ul>
+            <p>Deno does not use NPM or node modules to manage the packages. Instead, we link third party packages using browser
+            compatible URL.</p>
+            <h4 style="margin-left: 20%; margin-right: 20%; text-align: center;">For More info refer <span><a href="https://deno.land/">deno</a></span></h4>
+            <br>
+            <a href="#articles" class="goup">GO UP</a>
+            <br><br>
+            </div>
+            <br><br>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
