@@ -1,2 +1,3 @@
-This is portfolio project for IWAP Subject ( 3rd Year)
+#Portfolio
 
+Simple portfolio made with vanilla JS, CSS & HTML
